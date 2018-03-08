@@ -1,3 +1,9 @@
+/*
+Memory Game made By Ricardo Weiss, for IPND final extra-curricular/FEND udacity course, i've started looking some examples, and was inspired by this code/tutorial:
+https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
+Only the functions startGame and startTimer that is inspired by the code above.
+*/
+
 var card = document.getElementsByClassName("card");
 var cards = [...card];
 var firstChoice = '';
@@ -9,7 +15,7 @@ var movesCounter = 0;
 var starsCounter = 3;
 var restartElement = document.getElementById("restart");
 var matchCounter = 0;
-var second = 0, minute = 0, hour = 0;
+var second = 0, minute = 0;
 var timerIcon = document.getElementsByClassName("timer");
 var timer = timerIcon[1];
 var interval;
@@ -210,7 +216,6 @@ function startTimer(){
             second = 0;
         }
         if(minute === 60){
-            hour++;
             minute = 0;
         }
     },1000);
