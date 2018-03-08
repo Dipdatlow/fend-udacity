@@ -122,7 +122,7 @@ const deck = document.querySelector(".deck");
 function startGame() {
     var shuffledCards = shuffle(cards);
     for (var i = 0; i < shuffledCards.length; i++) {
-        [].forEach.call(shuffledCards, function(item) {
+        shuffledCards.forEach(function(item) {
             deck.appendChild(item);
         })
     }
