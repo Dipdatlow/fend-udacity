@@ -9,7 +9,7 @@ Just run the index.html file.
 # Getting Started #
 
 1st click on any square button to start
-2st Try to match cards, memorize their location to win.
+2nd Try to match cards, memorize their location to win.
 
 Functionality details:
 
